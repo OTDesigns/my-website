@@ -22,11 +22,12 @@
         }
         #background {
             position: absolute;
-            top: 10%;
-            left: 10%;
-            width: 300px; /* Set a fixed width */
+            width: 450px; /* 50% larger than before (300px * 1.5) */
             height: auto; /* Maintain aspect ratio */
-            z-index: -1; /* Send background behind content */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the GIF */
+            z-index: -1; /* Send behind content */
         }
         #countdown {
             font-size: 5rem;
