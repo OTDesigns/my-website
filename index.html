@@ -19,6 +19,7 @@
             background-color: black; /* Black background */
             font-family: Arial, sans-serif;
             overflow: hidden;
+            position: relative;
         }
         #background {
             position: absolute;
@@ -29,23 +30,21 @@
             transform: translate(-50%, -50%); /* Center the image */
             z-index: -1; /* Send behind content */
         }
+        #content {
+            position: relative;
+            top: 30%; /* Push content down by 30% */
+            text-align: center;
+            color: white;
+        }
         #countdown {
             font-size: 5rem;
             font-weight: bold;
-            color: white;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-        }
-        #logo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 150px;
+            margin-top: 10px;
         }
         #release-link {
             font-size: 2rem;
-            color: white;
             text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-            margin-bottom: 20px;
         }
         #release-link a {
             color: #00aff4; /* Discord blue color */
@@ -55,21 +54,32 @@
         #release-link a:hover {
             text-decoration: underline;
         }
+        #logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 150px;
+        }
     </style>
 </head>
 <body>
     <!-- Background element: Use DISCORDBANNER.png -->
     <img id="background" src="DISCORDBANNER.png" alt="Background Image">
     
-    <!-- Release link -->
-    <div id="release-link">
-        <a href="https://discord.gg/goroleplay" target="_blank">GO Roleplay Release</a>
+    <div id="logo">
+        <img src="logo-transparent.png" alt="Logo">
     </div>
 
-    <div id="countdown">Loading...</div>
+    <!-- Main content (centered and pushed down) -->
+    <div id="content">
+        <!-- Release link -->
+        <div id="release-link">
+            <a href="https://discord.gg/goroleplay" target="_blank">GO Roleplay Release</a>
+        </div>
 
-    <!-- Image Logo -->
-    <img id="logo" src="logo-transparent.png" alt="Logo">
+        <!-- Countdown -->
+        <div id="countdown">Loading...</div>
+    </div>
 
     <script>
         // Set the countdown to 8 PM GMT today
