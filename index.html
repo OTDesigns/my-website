@@ -14,6 +14,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            flex-direction: column; /* Stack items vertically */
             height: 100vh;
             overflow: hidden;
             font-family: Arial, sans-serif;
@@ -39,14 +40,31 @@
             left: 20px;
             width: 150px;
         }
+        #release-link {
+            font-size: 2rem;
+            color: white;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        #release-link a {
+            color: #00aff4; /* Discord blue color */
+            text-decoration: none;
+            font-weight: bold;
+        }
+        #release-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <!-- Background element: Use GIF as background -->
-<img id="background" src="background.gif.gif" alt="Background GIF">
-
-
+    <img id="background" src="background.gif.gif" alt="Background GIF">
     
+    <!-- Release link -->
+    <div id="release-link">
+        <a href="https://discord.gg/goroleplay" target="_blank">GO Roleplay Release</a>
+    </div>
+
     <div id="countdown">Loading...</div>
 
     <!-- Image Logo -->
