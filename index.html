@@ -22,11 +22,11 @@
         }
         #background {
             position: absolute;
-            width: 900px; /* 200% larger than before (300px * 3 = 900px) */
-            height: auto; /* Maintain aspect ratio */
             top: 50%;
             left: 50%;
-            transform: translate(-50%, -50%); /* Center the GIF */
+            width: 90%; /* Slightly shrink the image to fit the viewport */
+            height: auto; /* Maintain aspect ratio */
+            transform: translate(-50%, -50%); /* Center the image */
             z-index: -1; /* Send behind content */
         }
         #countdown {
@@ -58,8 +58,8 @@
     </style>
 </head>
 <body>
-    <!-- Background element: Use GIF as background -->
-    <img id="background" src="background.gif.gif" alt="Background GIF">
+    <!-- Background element: Use DISCORDBANNER.png -->
+    <img id="background" src="DISCORDBANNER.png" alt="Background Image">
     
     <!-- Release link -->
     <div id="release-link">
